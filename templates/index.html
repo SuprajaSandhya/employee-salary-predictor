@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Salary Prediction Estimator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <h1>Employee Salary Prediction Estimator</h1>
+        <form method="POST" action="/result" class="form-container">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="education">Education:</label>
+            <select id="education" name="education" required>
+                {% for edu in educations %}
+                 <option value="{{ edu }}">{{ edu }}</option>
+                {% endfor %}
+            </select>
+
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="hours">Hours per Week:</label>
+            <input type="number" id="hours" name="hours-per-week" required>
+
+            <label for="workclass">Workclass:</label>
+            <select id="workclass" name="workclass">
+                {% for option in workclasses %}
+                <option value="{{ option }}">{{ option }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="occupation">Occupation:</label>
+            <select id="occupation" name="occupation">
+                {% for option in occupations %}
+                <option value="{{ option }}">{{ option }}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit" class="submit-btn">Predict Salary</button>
+        </form>
+    </div>
+</body>
+</html>

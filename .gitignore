@@ -1,0 +1,27 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore system files
+.DS_Store
+
+# Ignore model files (if any)
+*.pkl
+*.joblib
+
+# Ignore IDE settings
+.idea/
+.vscode/
+
+# Ignore Flask instance folder (if used)
+instance/
+
+# Ignore database files (if generated)
+*.sqlite3
+
+# Ignore environment variable files
+.env
