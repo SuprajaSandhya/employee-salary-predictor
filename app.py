@@ -100,7 +100,7 @@ Model Confidence: {confidence}%
                                age=age, education=education, gender="Male" if gender == 1 else "Female",
                                hours=hours, workclass=workclass, occupation=occupation)
     except Exception as e:
-        return f"❌ Error: {str(e)}"
+        return f" Error: {str(e)}"
 
 @app.route('/download', methods=['POST'])
 def download():
