@@ -12,7 +12,7 @@ body.dark-theme {
     padding: 30px;
     background: #1e1e1e;
     border-radius: 10px;
-    box-shadow: none; /* Removed glowing box-shadow */
+    box-shadow: none; 
 }
 
 h1, h2 {
@@ -35,7 +35,7 @@ input, select {
     border-radius: 5px;
 }
 
-/* Remove focus glow */
+
 input:focus, select:focus {
     outline: none;
     box-shadow: none;
@@ -63,7 +63,7 @@ input:focus, select:focus {
     padding: 30px;
     border-radius: 10px;
     background: #111;
-    box-shadow: none; /* Removed glowing box-shadow */
+    box-shadow: none; 
     text-align: center;
 }
 
